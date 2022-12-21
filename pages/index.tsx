@@ -1,8 +1,7 @@
 import Head from "next/head";
-import Image from "next/image";
 import { Inter } from "@next/font/google";
-import styles from "../styles/Home.module.css";
-import { Box } from "@chakra-ui/react";
+import { Box, chakra } from "@chakra-ui/react";
+import { ColorModeButton } from "../components/color-mode-button";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,6 +15,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Box>Hello Chakra</Box>
+      <ColorModeButton />
     </>
   );
 }
+export { getServerSideProps } from "../components/chakra";
