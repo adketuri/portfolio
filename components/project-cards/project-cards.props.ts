@@ -30,13 +30,14 @@ export const projects: Project[] = [
     },
     {
         title: "RM2k.net",
-        image: "http://andrew.alcuria.net/img/umbracraft.png",
-        description: "A website to archive and blog about old RPG Maker games. Built during paternity leave while I was feeling particularly nostalgic.",
+        image: "https://i.imgur.com/wRhfhSh.png",
+        description: "A website to archive and reminisce about old RPG Maker games. Users can create accounts with simple management options (change bio, reset password via email), download games, leave comments comments, or submit their own games.",
         tags: ["typescript", "react", "graphql", "postgresql"],
         date: "2020",
         links: [
             { text: "Website", url: "https://rm2k.net/", external: true },
-            { text: "Github", url: "https://github.com/adketuri/leech-teach", external: true },
+            { text: "Source (FE)", url: "https://github.com/adketuri/historia-client", external: true },
+            { text: "Source (BE)", url: "https://github.com/adketuri/historia-server", external: true },
         ]
     },
     {
@@ -69,7 +70,7 @@ export const projects: Project[] = [
         tags: ["java", "android"],
         date: "2019",
         links: [
-            { text: "Github", url: "https://github.com/adketuri/leech-teach", external: true },
+            { text: "Source", url: "https://github.com/adketuri/leech-teach", external: true },
         ]
     },
     {
@@ -90,7 +91,7 @@ export const projects: Project[] = [
         tags: ["java", "libgdx"],
         date: "2016",
         links: [
-            { text: "Github", url: "https://github.com/adketuri/umbracraft", external: true },
+            { text: "Source", url: "https://github.com/adketuri/umbracraft", external: true },
         ]
     }
 ]

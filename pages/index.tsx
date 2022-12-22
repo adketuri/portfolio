@@ -4,6 +4,7 @@ import { Box, chakra, Container } from "@chakra-ui/react";
 import { ColorModeButton } from "../components/color-mode-button";
 import { Header } from "../components/header/header";
 import { ProjectCards } from "../components/project-cards/project-cards";
+import { Footer } from "../components/footer/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,7 +22,7 @@ export default function Home() {
       </Head>
       <Header />
       <ProjectCards />
-      <ColorModeButton />
+      <Footer />
     </>
   );
 }

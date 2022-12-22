@@ -21,8 +21,8 @@ export const ProjectCards = () => {
       </Heading>
       <SimpleGrid columns={[1, null, 2, 3]} gap={4} m={4}>
         {projects.map((project) => (
-          <GridItem w="full" mb={10}>
-            <Box key={project.title}>
+          <GridItem w="full" mb={10} key={project.title}>
+            <Flex direction="column" height="100%">
               <Flex bgImage={project.image} height={180} alignItems="end">
                 <Heading
                   size="md"
@@ -34,16 +34,22 @@ export const ProjectCards = () => {
                   {project.title}
                 </Heading>
               </Flex>
-              {project.tags?.map((tag) => (
-                <Badge key={tag} mr={2} my={4}>
-                  {tag}
-                </Badge>
-              ))}
-              <Text mb={3}>{project.description}</Text>
+              <Flex direction="row">
+                {project.tags?.map((tag) => (
+                  <Badge key={tag} mr={2} my={4}>
+                    {tag}
+                  </Badge>
+                ))}
+              </Flex>
+              <Box flex={1}>
+                <Text mb={3}>{project.description}</Text>
+              </Box>
               <Divider my={3} />
               <Text>Date: {project.date}</Text>
-              {project.links && <LinkList links={project.links} />}
-            </Box>
+              <Box h={6}>
+                {project.links && <LinkList links={project.links} />}
+              </Box>
+            </Flex>
           </GridItem>
         ))}
       </SimpleGrid>
