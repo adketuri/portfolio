@@ -8,6 +8,7 @@ import {
 } from "@chakra-ui/react";
 import { HeaderBox } from "../header-box/header-box";
 import { LinkList } from "../link-list/link-list";
+import { Link } from "../link-list/link-list.props";
 
 const links: Link[] = [
   { text: "github", url: "https://github.com/adketuri", external: true },

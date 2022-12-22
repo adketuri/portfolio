@@ -16,12 +16,12 @@ export const ProjectCards = () => {
   return (
     <>
       <Heading size="lg" mx={4} mt={4}>
-        Notable Projects
+        Projects
       </Heading>
-      <Grid templateColumns="repeat(3, 1fr)">
-        <GridItem w="full">
-          {projects.map((project) => (
-            <Box m={4} key={project.title}>
+      <Grid templateColumns="repeat(3, 1fr)" gap={4} m={4}>
+        {projects.map((project) => (
+          <GridItem w="full" mb={10}>
+            <Box key={project.title}>
               <Flex bgImage={project.image} height={180} alignItems="end">
                 <Heading
                   size="md"
@@ -43,8 +43,8 @@ export const ProjectCards = () => {
               <Text>Date: {project.date}</Text>
               {project.links && <LinkList links={project.links} />}
             </Box>
-          ))}
-        </GridItem>
+          </GridItem>
+        ))}
       </Grid>
     </>
   );
