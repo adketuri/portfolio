@@ -30,7 +30,7 @@ export const Header = () => {
     <Flex bg={bg}>
       <HeaderBox
         title="Hello! 👋"
-        description="I'm Andrew. Software Engineer/Artist."
+        description="I'm Andrew, a Software Engineer/Artist."
       />
       <Spacer />
       <HeaderBox title="Find Me">

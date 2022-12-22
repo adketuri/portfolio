@@ -8,7 +8,7 @@ export const HeaderBox: FC<HeaderBoxProps> = ({
   children,
 }) => {
   return (
-    <Box flex={1} p={5}>
+    <Box flex={1} m={4}>
       <Heading size="lg">{title}</Heading>
       {description && <Text>{description}</Text>}
       {children}
