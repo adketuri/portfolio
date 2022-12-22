@@ -7,6 +7,7 @@ import {
   Grid,
   GridItem,
   Heading,
+  SimpleGrid,
   Text,
 } from "@chakra-ui/react";
 import { LinkList } from "../link-list/link-list";
@@ -18,7 +19,7 @@ export const ProjectCards = () => {
       <Heading size="lg" mx={4} mt={4}>
         Projects
       </Heading>
-      <Grid templateColumns="repeat(3, 1fr)" gap={4} m={4}>
+      <SimpleGrid columns={[1, null, 2, 3]} gap={4} m={4}>
         {projects.map((project) => (
           <GridItem w="full" mb={10}>
             <Box key={project.title}>
@@ -45,7 +46,7 @@ export const ProjectCards = () => {
             </Box>
           </GridItem>
         ))}
-      </Grid>
+      </SimpleGrid>
     </>
   );
 };
