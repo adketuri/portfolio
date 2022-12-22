@@ -64,10 +64,10 @@ export const projects: Project[] = [
         ]
     },
     {
-        title: "LeechTeach",
-        image: "http://andrew.alcuria.net/img/umbracraft.png",
-        description: "LeechTeach is an android application for WaniKani (a Japanese language-learning site) to help identify and study troublesome vocabulary.",
-        tags: ["java", "android"],
+        title: "Battle Camp",
+        image: "https://i.imgur.com/uEiye4n.png",
+        description: "BC is a monster catching MMORPG. I built intricate ui flows, game mechanics, and worked closely with backend teams to create APIs.",
+        tags: ["java", "libgdx", "android"],
         date: "2019",
         links: [
             { text: "Source", url: "https://github.com/adketuri/leech-teach", external: true },

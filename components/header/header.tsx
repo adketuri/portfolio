@@ -30,15 +30,20 @@ export const Header = () => {
   const spacer = useBreakpointValue({ sm: false, lg: true });
   const secondaryHeader = useBreakpointValue({ md: "Find Me" });
   return (
-    <Flex bg={bg} direction={{ sm: "column", md: "row" }}>
-      <HeaderBox
-        title="Hello! 👋"
-        description="I'm Andrew, a Software Engineer/Artist."
-      />
-      {spacer && <Spacer />}
+    <Flex bg={bg} py={8} direction={{ sm: "column", md: "row" }}>
+      <HeaderBox title="Hello! 👋">
+        <Text mt={2}>
+          I'm Andrew Keturi, a Software Engineer based in the SF Bay Area.
+        </Text>
+        <Text mt={2}>
+          I build thoughtful, responsible applications and games enjoyed by
+          many. You can view some of my favorite projects I've built below.
+        </Text>
+      </HeaderBox>
+      {/* {spacer && <Spacer />}
       <HeaderBox title={secondaryHeader}>
         <LinkList links={links} />
-      </HeaderBox>
+      </HeaderBox> */}
     </Flex>
   );
 };
