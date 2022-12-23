@@ -42,13 +42,13 @@ export const ProjectCards = () => {
                   </Badge>
                 ))}
               </Flex>
-              <Box flex={1}>
-                <Text mb={3}>{project.description}</Text>
-              </Box>
-              <Divider my={3} />
-              <Text>Date: {project.date}</Text>
               <Box h={6}>
                 {project.links && <LinkList links={project.links} />}
+              </Box>
+              <Text>Date: {project.date}</Text>
+              <Divider my={3} />
+              <Box flex={1}>
+                <Text mb={3}>{project.description}</Text>
               </Box>
             </Flex>
           </GridItem>

@@ -17,14 +17,14 @@ export const projects: Project[] = [
         tags: ["typescript", "react", "react native"],
         date: "2019 - 2022",
         links: [
-            { text: "Press (MagneticMag)", url: "https://www.magneticmag.com/2020/09/industry-insider-interview-tim-westergren/", external: true },
-            { text: "Steam", url: "https://store.steampowered.com/app/645380/Heroes_of_Umbra/", external: true }
+            { text: "MagneticMag", url: "https://www.magneticmag.com/2020/09/industry-insider-interview-tim-westergren/", external: true },
+            { text: "Rolling Stone", url: "https://www.rollingstone.com/pro/news/tim-westergren-pandora-sessions-artists-1053968/", external: true }
         ]
     },
     {
         title: "Next Music",
-        image: "https://i.imgur.com/STfxNDU.png",
-        description: "Next Music was a dashboard for artists to access all of the offerings of Next: track followers, manage a crew (think patreon), configure social links (linktree), etc. I was involved with early decisions on the tech stack, patterns, led a squad of 4 engineers, and maintained 100% code coverage.",
+        image: "https://i.imgur.com/W0icAkV.png",
+        description: "Next Music was a dashboard for artists to access all of the offerings of Next: track followers, manage a crew (think patreon), configure social links (linktree), etc. I was involved with early decisions on the tech stack & patterns, led a squad of 4 engineers, implemented features, and maintained 100% code coverage.",
         tags: ["typescript", "react", "next.js", "chakra ui"],
         date: "Oct - Dec 2022",
     },
@@ -53,14 +53,14 @@ export const projects: Project[] = [
     },
     {
         title: "Starless Umbra",
-        image: "http://andrew.alcuria.net/img/su.png",
+        image: "https://i.imgur.com/fFmfVYQ.png",
         description: "Starless Umbra is a couch co-op multiplayer RPG in-development for PC, Nintendo Switch. It has over 160,000 plays and has won awards on gxc.gg and rpgmaker.net.",
         tags: ["gamemaker"],
         date: "2020 - Present",
         links: [
             { text: "Website", url: "http://starlessumbra.com/", external: true },
-            { text: "RPGMaker.net", url: "https://store.steampowered.com/app/645380/Heroes_of_Umbra/", external: true },
-            { text: "PC Gamer Press", url: "https://www.pcgamer.com/the-top-five-rpg-maker-games/", external: true }
+            { text: "RPGMaker.net", url: "https://rpgmaker.net/games/407", external: true },
+            { text: "PC Gamer", url: "https://www.pcgamer.com/the-top-five-rpg-maker-games/", external: true }
         ]
     },
     {
