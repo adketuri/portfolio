@@ -12,15 +12,16 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { LinkList } from "../link-list/link-list";
+import { TagList } from "../tag-list/tag-list";
 import { projects } from "./project-cards.props";
 
 export const ProjectCards = () => {
   return (
     <Container maxW="container.lg">
-      <Heading size="lg" mx={4} mt={4}>
+      <Heading size="lg" mt={4}>
         Projects
       </Heading>
-      <SimpleGrid columns={[1, null, 2, 3]} gap={8} m={4}>
+      <SimpleGrid columns={[1, null, 2, 3]} gap={8} my={8}>
         {projects.map((project) => (
           <GridItem w="full" mb={10} key={project.title}>
             <Flex direction="column" height="100%">
@@ -35,13 +36,7 @@ export const ProjectCards = () => {
                   {project.title}
                 </Heading>
               </Flex>
-              <Flex direction="row">
-                {project.tags?.map((tag) => (
-                  <Badge key={tag} mr={2} my={4}>
-                    {tag}
-                  </Badge>
-                ))}
-              </Flex>
+              {project.tags && <TagList tags={project.tags} />}
               <Box h={6}>
                 {project.links && <LinkList links={project.links} />}
               </Box>

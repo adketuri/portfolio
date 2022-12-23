@@ -34,7 +34,7 @@ export const Footer: FC = () => {
         <HeaderBox title="Let's Connect">
           <LinkList links={links} />
         </HeaderBox>
-        <Flex p={4} align="center">
+        <Flex py={4} align="center">
           <Text flex={1}>©{new Date().getFullYear()} alcuria.net</Text>
         </Flex>
       </Container>

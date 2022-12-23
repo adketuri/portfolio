@@ -9,7 +9,7 @@ export const HeaderBox: FC<HeaderBoxProps> = ({
   children,
 }) => {
   return (
-    <Box flex={1} mx={4}>
+    <Box flex={1}>
       <Flex justify="space-between">
         <Heading size="lg" mb={4}>
           {title}

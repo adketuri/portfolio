@@ -5,6 +5,7 @@ import { ColorModeButton } from "../components/color-mode-button";
 import { Header } from "../components/header/header";
 import { ProjectCards } from "../components/project-cards/project-cards";
 import { Footer } from "../components/footer/footer";
+import { About } from "../components/about/about";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +23,7 @@ export default function Home() {
       </Head>
       <Header />
       <ProjectCards />
+      <About />
       <Footer />
     </>
   );
