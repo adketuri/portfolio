@@ -53,7 +53,7 @@ export const projects: Project[] = [
     },
     {
         title: "Starless Umbra",
-        image: "https://i.imgur.com/fFmfVYQ.png",
+        image: "https://i.imgur.com/K4wHNxe.png",
         description: "Starless Umbra is a couch co-op multiplayer RPG in-development for PC, Nintendo Switch. It has over 160,000 plays and has won awards on gxc.gg and rpgmaker.net.",
         tags: ["gamemaker"],
         date: "2020 - Present",

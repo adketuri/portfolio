@@ -18,10 +18,10 @@ import { projects } from "./project-cards.props";
 export const ProjectCards = () => {
   return (
     <Container maxW="container.lg">
-      <Heading size="lg" mt={4}>
+      <Heading size="lg" mt={8}>
         Projects
       </Heading>
-      <SimpleGrid columns={[1, null, 2, 3]} gap={8} my={8}>
+      <SimpleGrid columns={[1, null, 2, 3]} gap={8} mt={8}>
         {projects.map((project) => (
           <GridItem w="full" mb={10} key={project.title}>
             <Flex direction="column" height="100%">
