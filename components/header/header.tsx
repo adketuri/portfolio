@@ -39,7 +39,7 @@ export const Header = () => {
             <Text mt={2}>
               I'm Andrew Keturi, a Software Engineer based in the SF Bay Area.
             </Text>
-            <Text mt={2}>
+            <Text mt={4}>
               I build thoughtful, responsible applications and games enjoyed by
               many. You can view some of my favorite projects I've created
               below.

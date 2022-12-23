@@ -26,7 +26,7 @@ export const Skills: FC = () => {
   return (
     <Box bg={bg} py={4}>
       <Container maxW="container.lg">
-        <Flex direction={{ sm: "column", md: "row" }}>
+        <Flex direction={{ sm: "column", md: "row" }} mb={4}>
           <Box flex={{ md: 1, lg: 2 }}>
             <Heading size="lg" py={4}>
               Technical Skills
@@ -40,8 +40,13 @@ export const Skills: FC = () => {
               Android applications with Java, though these days I find{" "}
               <b>React Native</b> a bit more pleasant.
             </Text>
+            <Text mt={4}>
+              Non-technical skills include (but are not limited to): strength
+              training, playing competitive dance dance revolution, studying
+              kanji, and baking.
+            </Text>
           </Box>
-          <Box flex={1} ml={{ md: 8, lg: 16 }} mb={4}>
+          <Box flex={1} ml={{ md: 8, lg: 16 }}>
             <About />
           </Box>
         </Flex>
