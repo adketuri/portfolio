@@ -14,7 +14,7 @@ export const projects: Project[] = [
     {
         title: "Sessions",
         image: "sessions",
-        description: "Sessions was a live streaming platform for musicians. I helped build the web and native platform, drafted API specs with the backend team, led a squad of 4 engineers, and worked closely with stakeholders to deliver timely feature updates.",
+        description: "Sessions was a live streaming platform for musicians, with over 130k artists and 1.7m fans. I helped build features from ticketed events to streaming on the web and native platform. This involved collaborating with the backend team on API specs, leading a squad of 4 engineers, and working closely with stakeholders to deliver timely updates.",
         tags: ["typescript", "react", "react native"],
         date: "2019 - 2022",
         links: [
@@ -67,11 +67,11 @@ export const projects: Project[] = [
     {
         title: "Battle Camp",
         image: "bc",
-        description: "BC is a monster catching MMORPG. I built intricate UI flows, game mechanics, and worked closely with backend teams to create APIs. It has 10m+ downloads to date on google play.",
+        description: "BC is a monster catching MMORPG, winner of the App Store's Multiplayer Game of The Year 2013. I built intricate UI flows, game mechanics, and worked closely with backend teams to create APIs. It has 30m+ downloads and made over $50m in revenue.",
         tags: ["java", "libgdx", "android"],
         date: "2014 - 2018",
         links: [
-            { text: "Website", url: "https://battlecamp.com", external: true },
+            { text: "Apple Dev Spotlight", url: "https://developer.apple.com/app-store/wrkshp/", external: true },
             { text: "Google Play", url: "https://play.google.com/store/apps/details?id=com.pennypop.monsters.live", external: true }
         ]
     }
