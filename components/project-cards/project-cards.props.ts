@@ -1,18 +1,19 @@
-import { Link } from "../link-list/link-list.props";
+import { LinkItem } from "../link-list/link-list.props";
+import { ImageKey } from "./images";
 
 export type Project = {
     title: string,
     description: string,
-    image: string,
+    image: ImageKey,
     date: string,
     tags?: string[],
-    links?: Link[],
+    links?: LinkItem[],
 }
 
 export const projects: Project[] = [
     {
         title: "Sessions",
-        image: "https://i.imgur.com/STfxNDU.png",
+        image: "sessions",
         description: "Sessions was a live streaming platform for musicians. I helped build the web and native platform, drafted API specs with the backend team, led a squad of 4 engineers, and worked closely with stakeholders to deliver timely feature updates.",
         tags: ["typescript", "react", "react native"],
         date: "2019 - 2022",
@@ -23,15 +24,15 @@ export const projects: Project[] = [
     },
     {
         title: "Next Music",
-        image: "https://i.imgur.com/W0icAkV.png",
+        image: "nextmusic",
         description: "Next Music was a dashboard for artists to access all of the offerings of Next: track followers, manage a crew (think patreon), configure social links (linktree), etc. I was involved with early decisions on the tech stack & patterns, led a squad of 4 engineers, implemented features, and maintained 100% code coverage.",
         tags: ["typescript", "react", "next.js", "chakra ui"],
         date: "Oct - Dec 2022",
     },
     {
         title: "RM2k.net",
-        image: "https://i.imgur.com/wRhfhSh.png",
-        description: "A website to archive and reminisce about old RPG Maker games. Users can create accounts with simple management options (change bio, reset password via email), download games, leave comments comments, or submit their own games.",
+        image: "rm2k",
+        description: "RM2k.net is a solo fullstack project to archive and reminisce about old RPG Maker games. Users can create accounts with simple management options (change bio, reset password via email), download games, leave comments comments, or submit their own games.",
         tags: ["typescript", "react", "graphql", "postgresql"],
         date: "2020",
         links: [
@@ -42,7 +43,7 @@ export const projects: Project[] = [
     },
     {
         title: "Heroes of Umbra",
-        image: "http://andrew.alcuria.net/img/hou.png",
+        image: "hou",
         description: "HoU is a networked multiplayer action RPG. I managed to build a game engine with libGDX/kryonet, teach myself pixel art to create the game assets, and publish the game on steam.",
         tags: ["java", "libgdx", "kryonet"],
         date: "2012 - 2018",
@@ -53,7 +54,7 @@ export const projects: Project[] = [
     },
     {
         title: "Starless Umbra",
-        image: "https://i.imgur.com/K4wHNxe.png",
+        image: "su",
         description: "Starless Umbra is a couch co-op multiplayer RPG in-development for PC, Nintendo Switch. It has over 160,000 plays and has won awards on gxc.gg and rpgmaker.net.",
         tags: ["gamemaker"],
         date: "2020 - Present",
@@ -65,12 +66,13 @@ export const projects: Project[] = [
     },
     {
         title: "Battle Camp",
-        image: "https://i.imgur.com/uEiye4n.png",
-        description: "BC is a monster catching MMORPG. I built intricate UI flows, game mechanics, and worked closely with backend teams to create APIs.",
+        image: "bc",
+        description: "BC is a monster catching MMORPG. I built intricate UI flows, game mechanics, and worked closely with backend teams to create APIs. It has 10m+ downloads to date on google play.",
         tags: ["java", "libgdx", "android"],
         date: "2014 - 2018",
         links: [
             { text: "Website", url: "https://battlecamp.com", external: true },
+            { text: "Google Play", url: "https://play.google.com/store/apps/details?id=com.pennypop.monsters.live", external: true }
         ]
     }
 ]

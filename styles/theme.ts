@@ -8,9 +8,17 @@ const config = {
     heading: `'Roboto Slab', serif`,
   },
   components: {
+    Text: {
+      variants: {
+        sub: (props: any) => ({
+          fontSize: "sm",
+          color: props.colorMode === "dark" ? "gray.500" : "gray.500",
+        }),
+      }
+    },
     Link: {
       variants: {
-        outgoing: (props) => ({
+        outgoing: (props: any) => ({
           color: props.colorMode === "dark" ? "red.300" : "red.400",
           _hover: {
             color: props.colorMode === "dark" ? "red.50" : "red.700",

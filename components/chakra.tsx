@@ -7,7 +7,7 @@ import {
 } from "@chakra-ui/react";
 import theme from "../styles/theme";
 
-export function Chakra({ cookies, children }) {
+export function Chakra({ cookies, children }: { cookies: any; children: any }) {
   const colorModeManager =
     typeof cookies === "string"
       ? cookieStorageManagerSSR(cookies)
@@ -21,7 +21,7 @@ export function Chakra({ cookies, children }) {
 }
 
 // also export a reusable function getServerSideProps
-export function getServerSideProps({ req }) {
+export function getServerSideProps({ req }: { req: any }) {
   return {
     props: {
       // first time users will not have any cookies and you may not return

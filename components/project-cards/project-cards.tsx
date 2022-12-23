@@ -14,6 +14,8 @@ import {
 import { LinkList } from "../link-list/link-list";
 import { TagList } from "../tag-list/tag-list";
 import { projects } from "./project-cards.props";
+import Image from "next/image";
+import { allImages } from "./images";
 
 export const ProjectCards = () => {
   return (
@@ -22,20 +24,28 @@ export const ProjectCards = () => {
         Projects
       </Heading>
       <SimpleGrid columns={[1, null, 2, 3]} gap={8} mt={8}>
-        {projects.map((project) => (
+        {projects.map((project, i) => (
           <GridItem w="full" mb={10} key={project.title}>
             <Flex direction="column" height="100%">
-              <Flex bgImage={project.image} height={180} alignItems="end">
+              <Box position="relative" height={180} overflow="hidden">
+                <Image
+                  src={allImages[project.image]}
+                  fill
+                  style={{ objectFit: "cover" }}
+                  alt={project.title}
+                />
                 <Heading
+                  position="absolute"
+                  bottom={0}
                   size="md"
                   p={1}
                   bg="blackAlpha.600"
-                  width="100%"
+                  width="full"
                   color="white"
                 >
                   {project.title}
                 </Heading>
-              </Flex>
+              </Box>
               {project.tags && <TagList tags={project.tags} />}
               <Box h={6}>
                 {project.links && <LinkList links={project.links} />}

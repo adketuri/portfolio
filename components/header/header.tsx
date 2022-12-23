@@ -10,10 +10,9 @@ import {
 } from "@chakra-ui/react";
 import { ColorModeButton } from "../color-mode-button";
 import { HeaderBox } from "../header-box/header-box";
-import { LinkList } from "../link-list/link-list";
-import { Link } from "../link-list/link-list.props";
+import { LinkItem } from "../link-list/link-list.props";
 
-const links: Link[] = [
+const links: LinkItem[] = [
   { text: "github", url: "https://github.com/adketuri", external: true },
   {
     text: "stackoverflow",
