@@ -66,11 +66,11 @@ export const projects: Project[] = [
     {
         title: "Battle Camp",
         image: "https://i.imgur.com/uEiye4n.png",
-        description: "BC is a monster catching MMORPG. I built intricate ui flows, game mechanics, and worked closely with backend teams to create APIs.",
+        description: "BC is a monster catching MMORPG. I built intricate UI flows, game mechanics, and worked closely with backend teams to create APIs.",
         tags: ["java", "libgdx", "android"],
-        date: "2019",
+        date: "2014 - 2018",
         links: [
-            { text: "Source", url: "https://github.com/adketuri/leech-teach", external: true },
+            { text: "Website", url: "https://battlecamp.com", external: true },
         ]
     },
     {

@@ -1,18 +1,20 @@
+import "@fontsource/roboto-slab";
+import "@fontsource/roboto";
 import {
   ChakraProvider,
   cookieStorageManagerSSR,
   localStorageManager,
 } from "@chakra-ui/react";
+import theme from "../styles/theme";
 
 export function Chakra({ cookies, children }) {
-  // b) Pass `colorModeManager` prop
   const colorModeManager =
     typeof cookies === "string"
       ? cookieStorageManagerSSR(cookies)
       : localStorageManager;
 
   return (
-    <ChakraProvider colorModeManager={colorModeManager}>
+    <ChakraProvider theme={theme} colorModeManager={colorModeManager}>
       {children}
     </ChakraProvider>
   );

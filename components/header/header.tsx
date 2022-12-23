@@ -37,7 +37,7 @@ export const Header = () => {
         </Text>
         <Text mt={2}>
           I build thoughtful, responsible applications and games enjoyed by
-          many. You can view some of my favorite projects I've built below.
+          many. You can view some of my favorite projects I've created below.
         </Text>
       </HeaderBox>
       {/* {spacer && <Spacer />}
