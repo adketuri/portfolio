@@ -26,7 +26,7 @@ export const Skills: FC = () => {
   return (
     <Box bg={bg} py={4}>
       <Container maxW="container.lg">
-        <Flex direction={{ sm: "column", md: "row" }} mb={4}>
+        <Flex direction={{ base: "column", md: "row" }} mb={4}>
           <Box flex={{ md: 1, lg: 2 }}>
             <Heading size="lg" py={4}>
               Technical Skills

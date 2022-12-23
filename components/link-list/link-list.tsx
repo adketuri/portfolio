@@ -1,5 +1,5 @@
 import NextLink from "next/link";
-import { Box, Flex, Link, Text } from "@chakra-ui/react";
+import { Flex, Link, Text } from "@chakra-ui/react";
 import { FC } from "react";
 import { LinkListProps } from "./link-list.props";
 

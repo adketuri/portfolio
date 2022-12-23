@@ -10,28 +10,11 @@ import {
 } from "@chakra-ui/react";
 import { ColorModeButton } from "../color-mode-button";
 import { HeaderBox } from "../header-box/header-box";
-import { LinkItem } from "../link-list/link-list.props";
-
-const links: LinkItem[] = [
-  { text: "github", url: "https://github.com/adketuri", external: true },
-  {
-    text: "stackoverflow",
-    url: "https://stackoverflow.com/users/2158740/adketuri",
-    external: true,
-  },
-  {
-    text: "linkedin",
-    url: "https://www.linkedin.com/in/andrewketuri",
-    external: true,
-  },
-];
 
 export const Header = () => {
   const bg = useColorModeValue("gray.100", "gray.900");
-  const spacer = useBreakpointValue({ sm: false, lg: true });
-  const secondaryHeader = useBreakpointValue({ md: "Find Me" });
   return (
-    <Flex bg={bg} py={8} direction={{ sm: "column", md: "row" }}>
+    <Flex bg={bg} py={8} direction={{ base: "column", md: "row" }}>
       <Container maxW="container.lg">
         <Flex>
           <HeaderBox title="Hello! 👋" titleRight={<ColorModeButton />}>
