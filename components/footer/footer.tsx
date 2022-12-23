@@ -1,4 +1,11 @@
-import { Box, Flex, Spacer, useColorModeValue, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  Spacer,
+  useColorModeValue,
+  Text,
+  Container,
+} from "@chakra-ui/react";
 import { FC } from "react";
 import { ColorModeButton } from "../color-mode-button";
 import { HeaderBox } from "../header-box/header-box";
@@ -23,13 +30,14 @@ export const Footer: FC = () => {
   const bg = useColorModeValue("gray.100", "gray.900");
   return (
     <Box bg={bg} py={4}>
-      <HeaderBox title="Let's Connect">
-        <LinkList links={links} />
-      </HeaderBox>
-      <Flex px={8} align="center">
-        <Text flex={1}>©{new Date().getFullYear()} alcuria.net</Text>
-        <ColorModeButton />
-      </Flex>
+      <Container maxW="container.lg">
+        <HeaderBox title="Let's Connect">
+          <LinkList links={links} />
+        </HeaderBox>
+        <Flex p={4} align="center">
+          <Text flex={1}>©{new Date().getFullYear()} alcuria.net</Text>
+        </Flex>
+      </Container>
     </Box>
   );
 };

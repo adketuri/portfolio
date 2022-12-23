@@ -72,26 +72,5 @@ export const projects: Project[] = [
         links: [
             { text: "Website", url: "https://battlecamp.com", external: true },
         ]
-    },
-    {
-        title: "Heroes of Umbra Builder",
-        image: "http://andrew.alcuria.net/img/builder.png",
-        description: "HoU Builder is a web application for creating Heroes of Umbra character builds.",
-        tags: ["react", "go"],
-        date: "2019",
-        links: [
-            { text: "Website", url: "https://builder.heroesofumbra.com/", external: true },
-            { text: "API", url: "https://api.heroesofumbra.com/", external: true },
-        ]
-    },
-    {
-        title: "Umbracraft",
-        image: "http://andrew.alcuria.net/img/umbracraft.png",
-        description: "Umbracraft is a collection of tools built with libgdx to help game developers build role-playing games without any programming knowledge, similar to RPG Maker.",
-        tags: ["java", "libgdx"],
-        date: "2016",
-        links: [
-            { text: "Source", url: "https://github.com/adketuri/umbracraft", external: true },
-        ]
     }
 ]

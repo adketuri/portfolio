@@ -11,7 +11,7 @@ const config = {
     Link: {
       variants: {
         outgoing: (props) => ({
-          color: props.colorMode === "dark" ? "red.200" : "red.600",
+          color: props.colorMode === "dark" ? "red.300" : "red.400",
           _hover: {
             color: props.colorMode === "dark" ? "red.50" : "red.700",
             textDecoration: "none",

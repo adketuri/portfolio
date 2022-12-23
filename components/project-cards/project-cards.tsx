@@ -2,6 +2,7 @@ import {
   Badge,
   Box,
   Card,
+  Container,
   Divider,
   Flex,
   Grid,
@@ -15,11 +16,11 @@ import { projects } from "./project-cards.props";
 
 export const ProjectCards = () => {
   return (
-    <>
-      <Heading size="lg" mx={8} mt={4}>
+    <Container maxW="container.lg">
+      <Heading size="lg" mx={4} mt={4}>
         Projects
       </Heading>
-      <SimpleGrid columns={[1, null, 2, 3]} gap={8} m={8}>
+      <SimpleGrid columns={[1, null, 2, 3]} gap={8} m={4}>
         {projects.map((project) => (
           <GridItem w="full" mb={10} key={project.title}>
             <Flex direction="column" height="100%">
@@ -53,6 +54,6 @@ export const ProjectCards = () => {
           </GridItem>
         ))}
       </SimpleGrid>
-    </>
+    </Container>
   );
 };
