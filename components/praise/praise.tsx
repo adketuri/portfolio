@@ -17,12 +17,13 @@ export const Praise: FC = () => {
       <Heading size="lg" mt={8}>
         High-Fives
       </Heading>
-      <Text mt={4}>
+      <Text mt={8}>
         At Sessions we used 15Five to track team sentiment and highlight impacts
-        individuals and teams had on others. I've kept these snippets to remind
-        myself the impact I've had on my former teammates.
+        individuals and teams had on others (via a virtual high-five). I've kept
+        these snippets to remind myself the impact I've had on my former
+        teammates.
       </Text>
-      <SimpleGrid columns={[1, 2, null, 3]} mt={4} gap={6}>
+      <SimpleGrid columns={[1, 2, null, 3]} mt={8} gap={6}>
         {praise.map((p, i) => {
           return (
             <Card key={i}>

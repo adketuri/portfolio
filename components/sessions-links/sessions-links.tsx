@@ -5,10 +5,10 @@ import { FC } from "react";
 export const SessionsLinks: FC = () => {
   return (
     <Container maxW="container.lg">
-      <Heading size="lg" mt={4}>
+      <Heading size="lg" mt={8}>
         Further Reading
       </Heading>
-      <Text mt={4}>
+      <Text mt={8}>
         <Link
           variant="outgoing"
           as={NextLink}

@@ -15,23 +15,23 @@ export const SessionsWork: FC = () => {
       <Heading size="lg" mt={8}>
         Building Sessions
       </Heading>
-      <Text mt={4}>
+      <Text mt={8}>
         Sessions was a platform for artists to make money through a variety of
         offerings: streaming events, selling personalized videos, sharing
         personalized content to subscribed fans, and more.
       </Text>
-      <Text mt={4}>
+      <Text mt={8}>
         At its peak, the service had over 130k active musicians and 1.7m fans,
         generating $1m in paid ticket revenue during the pandemic. Headliner
         artists generated $200k monthly recurring revenue.
       </Text>
-      <Text mt={4}>
+      <Text mt={8}>
         This was possible with the help of a close, caring, and focused
         engineering team. Contributing to the prospects of helping musicians
         earn meaningful income filled us with a strong sense of purpose. Here
         are some of my favorite things I worked on:
       </Text>
-      <UnorderedList mt={4} spacing={1.5}>
+      <UnorderedList mt={8} spacing={1.5}>
         <ListItem>
           Led a team of 3 engineers to plan, develop, and deploy features to an
           audience of 130k musicians and 1.7m fans.

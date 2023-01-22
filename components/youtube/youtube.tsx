@@ -1,5 +1,5 @@
 import { Box, IconButton, Image } from "@chakra-ui/react";
-import { FC, useRef } from "react";
+import { FC, useEffect, useLayoutEffect, useRef, useState } from "react";
 import { YouTubeProps } from "./youtube.props";
 import { TriangleUpIcon } from "@chakra-ui/icons";
 
@@ -12,6 +12,22 @@ export const YouTube: FC<YouTubeProps> = ({
 }) => {
   const divRef = useRef<HTMLDivElement | null>(null);
 
+  const [size, setSize] = useState({ w: 0, h: 0 });
+  useEffect(() => {
+    const onResize = () => {
+      const rect = divRef.current?.getBoundingClientRect();
+      if (!rect) return;
+      if (rect.width > 0) {
+        setSize({ w: rect.width, h: rect.height });
+      } else {
+        setSize({ w: width, h: height });
+      }
+    };
+    onResize();
+    window.addEventListener("resize", onResize);
+    return () => window.removeEventListener("resize", onResize);
+  }, []);
+
   const onClick = () => {
     const iframe = document.createElement("iframe");
     iframe.setAttribute("frameborder", "0");
@@ -20,8 +36,8 @@ export const YouTube: FC<YouTubeProps> = ({
       "allow",
       "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     );
-    iframe.style.width = "100%";
-    iframe.style.height = "100%";
+    iframe.style.width = size.w + "px";
+    iframe.style.height = size.h + "px";
     iframe.setAttribute(
       "src",
       `https://www.youtube.com/embed/${video}?rel=0&showinfo=1&autoplay=1`
@@ -34,30 +50,24 @@ export const YouTube: FC<YouTubeProps> = ({
 
   return (
     <Box
-      bg="black"
+      // bg="black"
       ref={divRef}
       position="relative"
-      width={width}
-      height={height}
       alignContent="center"
       display="table"
       {...props}
     >
-      <IconButton
-        onClick={onClick}
-        variant="ghost"
-        aria-label={"Play"}
-        icon={<TriangleUpIcon />}
-        position="absolute"
-        alignSelf="center"
-        top={height / 2}
-        left={0}
-        right={0}
-        marginLeft="auto"
-        marginRight="auto"
-        width={10}
-        transform="rotate(90deg) scale(5)"
-      />
+      {size.w > 0 && (
+        <IconButton
+          onClick={onClick}
+          variant="unstyled"
+          aria-label={"Play"}
+          icon={<TriangleUpIcon color="white" />}
+          top={size.h / 2 - 0}
+          left={size.w / 2 - 10}
+          transform="rotate(90deg) scale(5)"
+        />
+      )}
       <Image
         objectFit="cover"
         onClick={onClick}
@@ -65,7 +75,6 @@ export const YouTube: FC<YouTubeProps> = ({
         src={`https://img.youtube.com/vi/${video}/${thumbnailQuality}.jpg`}
         alt="YouTube Video Thumbnail"
         className="shadow"
-        height="100%"
       />
     </Box>
   );
