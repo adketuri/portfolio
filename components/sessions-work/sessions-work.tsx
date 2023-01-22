@@ -1,4 +1,11 @@
-import { Container, Heading, Text } from "@chakra-ui/react";
+import {
+  Container,
+  Heading,
+  List,
+  ListItem,
+  Text,
+  UnorderedList,
+} from "@chakra-ui/react";
 import { FC } from "react";
 import { YouTube } from "../youtube/youtube";
 
@@ -21,8 +28,34 @@ export const SessionsWork: FC = () => {
       <Text mt={4}>
         This was possible with the help of a close, caring, and focused
         engineering team. Contributing to the prospects of helping musicians
-        earn meaningful income filled us with a strong sense of purpose.
+        earn meaningful income filled us with a strong sense of purpose. Here
+        are some of my favorite things I worked on:
       </Text>
+      <UnorderedList mt={4} spacing={1.5}>
+        <ListItem>
+          Led a team of 3 engineers to plan, develop, and deploy features to an
+          audience of 130k musicians and 1.7m fans.
+        </ListItem>
+        <ListItem>
+          Built a ticketing system for live streamed shows, which generated $1m
+          in paid ticket sales.
+        </ListItem>
+        <ListItem>
+          Wrote native wrappers for the Amazon IVS Broadcast SDK to allow
+          artists to stream from our React Native application, increasing artist
+          streams by 40%.
+        </ListItem>
+        <ListItem>
+          Implemented a monthly subscription service using the Stripe SDK for
+          artists to share exclusive content, generating $200k MRR for headliner
+          artists.
+        </ListItem>
+        <ListItem>
+          Conducted interviews and developed training materials for new hires,
+          growing the team from 4 to 12 engineers and doubling onboarding
+          throughput.
+        </ListItem>
+      </UnorderedList>
       <YouTube
         video="IDVPaOVYfJA"
         width={480}

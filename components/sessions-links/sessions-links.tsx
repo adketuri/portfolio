@@ -18,13 +18,22 @@ export const SessionsLinks: FC = () => {
           returns to break the music industrial complex
         </Link>
       </Text>
-      <Text mt={2} mb={8}>
+      <Text mt={2}>
         <Link
           variant="outgoing"
           as={NextLink}
           href="https://www.rollingstone.com/pro/news/tim-westergren-pandora-sessions-artists-1053968/"
         >
           Pandora's Ex-CEO Tim Westergren Wants to (Finally) Make Artists Money
+        </Link>
+      </Text>
+      <Text mt={2} mb={8}>
+        <Link
+          variant="outgoing"
+          as={NextLink}
+          href="https://www.magneticmag.com/2020/09/industry-insider-interview-tim-westergren/"
+        >
+          How Artists Can Make Real Money From Live Streaming
         </Link>
       </Text>
     </Container>

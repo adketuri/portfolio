@@ -18,8 +18,7 @@ export const projects: Project[] = [
         tags: ["typescript", "react", "react native"],
         date: "2019 - 2022",
         links: [
-            { text: "MagneticMag", url: "https://www.magneticmag.com/2020/09/industry-insider-interview-tim-westergren/", external: true },
-            { text: "Rolling Stone", url: "https://www.rollingstone.com/pro/news/tim-westergren-pandora-sessions-artists-1053968/", external: true }
+            { text: "Retrospective & Impact", url: "/sessions", external: false },
         ]
     },
     {

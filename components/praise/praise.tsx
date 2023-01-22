@@ -13,7 +13,7 @@ import praise from "./praise.json";
 
 export const Praise: FC = () => {
   return (
-    <Container maxW="container.lg">
+    <Container maxW="container.lg" mb={12}>
       <Heading size="lg" mt={8}>
         High-Fives
       </Heading>
