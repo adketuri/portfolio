@@ -9,8 +9,14 @@ export type Project = {
     tags?: string[],
     links?: LinkItem[],
 }
-
 export const projects: Project[] = [
+    {
+        title: "Pine Medical",
+        image: "pine",
+        description: "Pine Medical is a healthtech company tackling obesity by providing access to GLP-1 weight loss medications. I built a signup flow with Insurance/SMS verification, Vouched identity verification, and integrated with EMRs to store patient data. The cash pay platform reached $14m ARR in less than a year.",
+        tags: ["typescript", "react", "mui", "node", "prisma"],
+        date: "2019 - 2022",
+    },
     {
         title: "Sessions",
         image: "sessions",
@@ -49,18 +55,6 @@ export const projects: Project[] = [
         links: [
             { text: "Website", url: "http://heroesofumbra.com/", external: true },
             { text: "Steam", url: "https://store.steampowered.com/app/645380/Heroes_of_Umbra/", external: true }
-        ]
-    },
-    {
-        title: "Starless Umbra",
-        image: "su",
-        description: "Starless Umbra is a couch co-op multiplayer RPG in-development for PC, Nintendo Switch. It has over 160,000 plays and has won awards on gxc.gg and rpgmaker.net.",
-        tags: ["gamemaker"],
-        date: "2020 - Present",
-        links: [
-            { text: "Website", url: "http://starlessumbra.com/", external: true },
-            { text: "RPGMaker.net", url: "https://rpgmaker.net/games/407", external: true },
-            { text: "PC Gamer", url: "https://www.pcgamer.com/the-top-five-rpg-maker-games/", external: true }
         ]
     },
     {
