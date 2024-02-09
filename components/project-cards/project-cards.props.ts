@@ -15,7 +15,7 @@ export const projects: Project[] = [
         image: "pine",
         description: "Pine Medical is a healthtech company tackling obesity by providing access to GLP-1 weight loss medications. I built a signup flow with Insurance/SMS verification, Vouched identity verification, and integrated with EMRs to store patient data. The cash pay platform reached $14m ARR in less than a year.",
         tags: ["typescript", "react", "mui", "node", "prisma"],
-        date: "2019 - 2022",
+        date: "2023 - 2024",
         links: [
             { text: "Website", url: "https://www.pinemedical.com", external: true },
         ]
